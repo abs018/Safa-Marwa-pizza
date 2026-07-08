@@ -118,11 +118,8 @@ svg {
   .mobile-only {
     display: flex !important;
   }
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 12px;
-  }
 }
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -576,22 +573,32 @@ section.block {
 @media (max-width:760px) {
 
   .grid-5,
+  .grid-4,
   .grid-3,
   .grid-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .grid-4 {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px;
   }
 }
 
 @media (max-width:520px) {
 
   .grid-5,
+  .grid-4,
   .grid-3,
   .grid-2 {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px;
+  }
+}
+
+@media (max-width:360px) {
+
+  .grid-5,
+  .grid-4,
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr !important;
   }
 }
 
