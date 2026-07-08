@@ -111,16 +111,18 @@ svg {
   display: none;
 }
 
-@media (max-width:880px) {
+@media (max-width: 880px) {
   .desktop-only {
     display: none !important;
   }
-
   .mobile-only {
     display: flex !important;
   }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px;
+  }
 }
-
 .uppercase {
   text-transform: uppercase;
 }
